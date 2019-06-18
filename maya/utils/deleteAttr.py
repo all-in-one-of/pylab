@@ -8,5 +8,5 @@ sel = pm.selected()
 attrName = 'overrideName'
 for i in sel:
     pm.deleteAttr(i, at=attrName)
-sys.__stdout__.write( str(attrName)+ ' attribute removed!' + '\n')
-print '\n' + str(attrName)+ ' == Attribute removed!' + '\n'
+sys.__stdout__.write( str(attrName)+ '完成しました!' + '\n')
+print ('\n' + str(attrName)+ ' == 削りました!' + '\n')

@@ -11,5 +11,5 @@ attrName = 'overrideName'
 niceName = 'Override Name'
 for i in sel:
     i.addAttr(attrName,nn=niceName, dt='string')
-sys.__stdout__.write( str(attrName) + ' attribute added!' + '\n')
-print '\n' + str(attrName) + ' == Attribute added!' + '\n'
+sys.__stdout__.write( str(attrName) + ' 完成しました!' + '\n')
+print ('\n' + str(attrName) + ' == 含みました!' + '\n')
