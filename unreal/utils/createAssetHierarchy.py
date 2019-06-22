@@ -1,15 +1,28 @@
 import unreal
 
-asset_name = "BP_Actor"
-asset_directory = "/Game/Content"
+project_id = "001"
+project_name = "Test" 
 
-factory = unreal.BlueprintFactory()
-factory.set_editor_property("ParentClass", unreal.Actor)
+prefix = ["SE", "SV"]
+sub_directories = ["materials", "textures", "meshes", "blueprints"]
 
-def makeBPActor():
-    asset_tools = unreal.AssetToolsHelpers.get_asset_tools()
-    my_new_asset = asset_tools.create_asset(asset_name, asset_directory, None, factory)
+directory = unreal.EditorAssetLibrary()
+directory_path = "/Game/" + prefix[0] + project_id + "_" + project_name
 
-    unreal.EditorAssetLibrary.save_loaded_asset(my_new_asset)
+level = unreal.EditorLevelLibrary()
+level_name = prefix[1] +"_"+ project_name
+level_asset = directory_path + "/" + level_name
 
-makeBPActor()
+def asset_hierarchy():
+    does_exist = True
+    if directory.does_directory_exist == does_exist:
+        level.new_level(level_asset)
+        print(str(directory_path) + ' already exists')
+    else:
+        directory.make_directory(directory_path)        
+        for i in sub_directories:
+            directory.make_directory(directory_path + "/" + i)
+        level.new_level(level_asset) 
+        print(str(directory_path) + ' created')
+
+asset_hierarchy()
