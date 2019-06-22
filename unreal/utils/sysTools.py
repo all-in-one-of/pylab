@@ -28,6 +28,13 @@ def log_to_unreal():
     unreal.log('Awesomesauce')
 
 
+def log_warning_to_unreal():
+    '''
+    Prints something to unreals output log
+    '''
+    unreal.log_warning('Awesomesauce')
+
+
 def makeDirs():
     '''
     Makes a directory at the specified path
