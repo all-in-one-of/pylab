@@ -1,47 +1,47 @@
 import unreal
 
 '''
-Series of small snippets for querying asset names & paths
+資産名とパスを照会するための一連の小さなスニペット
 '''
 
 DIR_PATH = '/Game/'
 
-# Prints entire AssetData Struct
+# AssetData構造体全体を印刷します。
 def printAssetData():
     registry = unreal.AssetRegistryHelpers.get_asset_registry()
     assets = registry.get_assets_by_path(DIR_PATH, recursive=True)
     for asset in assets:
         print asset
 
-# Prints just the asset name
+# 資産名だけを印刷します。
 def printAssetName():
     registry = unreal.AssetRegistryHelpers.get_asset_registry()
     assets = registry.get_assets_by_path(DIR_PATH, recursive=True)
     for asset in assets:
         print asset.asset_name
 
-# Prints the asset class type
+# 資産クラスタイプを印刷します。
 def printAssetClass():
     registry = unreal.AssetRegistryHelpers.get_asset_registry()
     assets = registry.get_assets_by_path(DIR_PATH, recursive=True)
     for asset in assets:
         print asset.asset_class
     
-# Prints the package path of the uassets in DIR_PATH
+# DIR_PATHにuassetsのパッケージパスを印刷します。
 def printPackagePath():
     registry = unreal.AssetRegistryHelpers.get_asset_registry()
     assets = registry.get_assets_by_path(DIR_PATH, recursive=True)
     for asset in assets:
         print asset.package_path
 
-# Prints the package name of the uassets in DIR_PATH
+# DIR_PATHにuassetsのパッケージ名を印刷します。
 def printPackageName():
     registry = unreal.AssetRegistryHelpers.get_asset_registry()
     assets = registry.get_assets_by_path(DIR_PATH, recursive=True)
     for asset in assets:
         print asset.package_name
 
-# Prints the object path for each uasset in DIR_PATH
+# DIR_PATHに各uassetのオブジェクトパスを印刷します。
 def printObjectPath():
     registry = unreal.AssetRegistryHelpers.get_asset_registry()
     assets = registry.get_assets_by_path(DIR_PATH, recursive=True)
