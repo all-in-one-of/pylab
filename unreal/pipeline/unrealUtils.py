@@ -47,3 +47,13 @@ def printObjectPath():
     assets = registry.get_assets_by_path(DIR_PATH, recursive=True)
     for asset in assets:
         print asset.object_path
+
+# 特定のクラスタイプに基づいて資産名を印刷する.
+def listAssets():
+    registry = unreal.AssetRegistryHelpers.get_asset_registry()
+    assets = registry.get_assets_by_path(DIR_PATH, recursive=True)
+    for m in assets:
+        material_class = str(m.asset_class)
+        # Runs a check to see if an asset is of a particular class
+        if material_class == 'MaterialInstanceConstant':
+                print m.asset_name
