@@ -1,9 +1,9 @@
 import unreal
 
 project_id = "001"
-project_name = "Test" 
+project_name = "MidnightDiner" 
 
-prefix = ["SE", "SM"]
+prefix = ["SE", "2506"]
 sub_directories = ["materials", "textures", "meshes", "blueprints"]
 
 directory = unreal.EditorAssetLibrary()
