@@ -28,10 +28,16 @@ print("\"神様になった日\"")
 print("Σ/神様になった日")
 
 # String concatenation
-phrase = "\"神様になった日\""
-print(phrase + "かっこいい")
+phrase = "\'神様になった日"
+print(phrase + "がかっこいい")
 
-phrase = "Reol"
+# String concatenation long method
+phrase = "神様になった日"
+feeling =  "がかっこいい"
+full = f"{phrase}{feeling}"
+print(full)
+
+phrase = " Reol is the best "
 # Makes a string entirely upper case
 print(phrase.upper())
 
@@ -40,6 +46,30 @@ print(phrase.lower())
 
 # Capitalizes the first word
 print(phrase.capitalize())
+
+# Capitalizes the first letter of every word
+print(phrase.title())
+
+# Strips out any white spacing from the string
+print(phrase.strip())
+
+# Strips out any white spacing from the left side of the string
+print(phrase.lstrip())
+
+# Strips out any white spacing from the right side of the string
+print(phrase.rstrip())
+
+# Find the index of the first given character or sequence of characters in the string
+print(phrase.find("be"))
+
+# Replaces the index of the first given character or sequence of characters in the string
+print(phrase.replace("best", "greatest"))
+
+# Finds the given character or sequences of characters in a given string. Returns a boole value
+print("Reol" in phrase)
+
+# Returns a boole value whether the supplied character or sequence of characters exists inside a given  string
+print("Reol" not in phrase)
 
 # Returns a boole if a string is entirely in the upper case or not
 print(phrase.isupper())
@@ -66,4 +96,15 @@ print(phrase.index("日\""))
 phrase = "\"神様になった日\""
 print(phrase.replace("日", "月"))
 
+#  Adding a double quote inside a string
+phrase ="Python \"Programming"
+print  (phrase)
+
+#  Adding a single quote inside a string
+phrase ="Python \'Programming"
+print  (phrase)
+
+#  Adding a double slash inside a string
+phrase ="Python \\\\ Programming"
+print  (phrase)
 

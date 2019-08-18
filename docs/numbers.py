@@ -1,5 +1,5 @@
 # Imports native math module
-from math import*
+import math
 
 
 #################
@@ -45,11 +45,24 @@ print(min(7, 125))
 print(round(23.5))
 
 # Chops off any decimal number
-print(floor(3.7))
+print(math.floor(3.7))
 
 # Rounds any number up regardless if the decimal number being less than 5
-print(ceil(3.2))
+print(math.ceil(3.2))
 
 # Returns the square root of a given number
-print(sqrt(32))
+print(math.sqrt(32))
 
+# Returns the result as an integer
+print (10 // 3)
+
+# Returns the result of an exponent. In this case, 10 to the power of 3
+print (10 **3)
+
+# Augmented  assignment operator.
+x = 10
+x = x + 3 # Or
+x += 3  # Same as above
+
+
+print(math.ceil(2.2))

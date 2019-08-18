@@ -22,3 +22,7 @@ add_numbers(3, 2)
 hello()
 names('れをる', '二十三')
 
+def greet(name, version):
+	print (f"This is {name} {str(version)}")
+greet("UE", 4)
+

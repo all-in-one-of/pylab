@@ -16,6 +16,9 @@ print(singers)
 # Prints the index value from the list
 print(singers[0])
 
+# Prints the last index value from the list
+print(singers[-1])
+
 # Prints the values from the list starting with the given index
 print(singers[2:])
 
