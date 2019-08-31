@@ -39,5 +39,4 @@ def makeDirs():
     '''
     Makes a directory at the specified path
     '''
-    os.makedirs("C:/Users/touka/Desktop/git-dev/pylab/unreal/unrealProject/test/Content/Python")    
-
+    os.makedirs("C:/Users/touka/Desktop/git-dev/pylab/unreal/unrealProject/test/Content/Python")
