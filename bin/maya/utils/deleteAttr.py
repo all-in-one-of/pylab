@@ -1,12 +1,20 @@
-'''
-Removes a specifically defined attribute
-'''
+"""
+project documentation
+"""
 import sys
 import pymel.core as pm
 
-sel = pm.selected()
-attrName = 'newName'
-for i in sel:
-    pm.deleteAttr(i, at=attrName)
-sys.__stdout__.write( str(attrName)+ '完成しました!' + '\n')
-print ('\n' + str(attrName)+ ' == 削りました!' + '\n')
+
+def deleteAttr(name = 'enterName'):
+    """
+    deleteAttr [summary]
+    
+    :param name: [description], defaults to 'enterName'
+    :type name: str, optional
+    """
+    sel = pm.selected()
+    attrName = name
+    for i in sel:
+        pm.deleteAttr(i, at=attrName)
+    sys.__stdout__.write( str(attrName)+ '完成しました!' + '\n')
+    print ('\n' + str(attrName)+ ' == 削りました!' + '\n')

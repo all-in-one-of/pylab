@@ -36,9 +36,10 @@ print(type(int(myBool)))
 
 # combining data types
 def add_numbers(a: int, b: int):
+    """[summary]
+    
+    Arguments:
+        a {int} -- [description]
+        b {int} -- [description]
+    """
     print(a + b)
-
-
-# type hinting
-def type_hint(a: int, b: int) -> int:
-    return a + b
