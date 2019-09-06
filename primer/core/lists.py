@@ -47,7 +47,7 @@ print(singers)
 singers.pop()
 print(singers)
 
-# Checks to see if a certain item is within a list. 
+# Checks to see if a certain item is within a list.
 # If there are more than one instance, it prints out the first occurrence
 print(singers.index('みゆな'))
 

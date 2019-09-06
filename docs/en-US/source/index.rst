@@ -3,20 +3,49 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+=========================
 Pylab 0.0.1 Documentation
 =========================
 
 This documentation is a primer for all the things I'm learning with regards to python.
 
+.. warning::
+    This is a project and the code used here is still in its early infancy and is subject to drastic change. Proceed with caution
+
+Features
+--------
+
 - Describes basic data types & structures
 - Example uses of each module
 
-.. automodule:: functions.functions
-   :members:
+Contents:
 
 .. toctree::
-    :maxdepth: 1
+   :caption: Getting Started
+   :maxdepth: 1
 
-    help
-    zen
-    license
+   first_steps
+   python_env
+
+.. toctree::
+   :caption: Core Guide
+   :maxdepth: 2
+
+   python/basic
+
+.. toctree::
+   :caption: API Reference
+   :maxdepth: 2
+
+
+   api/api
+
+.. toctree::
+   :caption: Usage Guides
+   :maxdepth: 1
+
+   help/help
+   help/zen
+
+.. toctree::
+   :caption: Developer Docs

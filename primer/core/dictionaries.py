@@ -25,8 +25,8 @@ monthConversions = {
 }
 
 # Printing a specific dictionary key value
-print(monthConversions['Mar'])
+# print(monthConversions['Mar'])
 
 # Printing a specific dictionary key value using get function
 # Get function can take in a default value
-print(monthConversions.get('foo', 'Invalid key found!'))
+# print(monthConversions.get('foo', 'Invalid key found!'))

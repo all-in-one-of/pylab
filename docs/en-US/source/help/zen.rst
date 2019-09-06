@@ -1,5 +1,5 @@
-Zen of Python (From the Python.org PEP-20 page)
-===============================================
+Zen of Python
+=============
 
 - Beautiful is better than ugly.
 - Explicit is better than implicit.

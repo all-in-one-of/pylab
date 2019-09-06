@@ -1,16 +1,17 @@
-How To Use
-==========
+Strings
+=======
 
 
-Highlighted Code
-----------------
+Working with Strings
+--------------------
 ``You can use backticks for showing highlighted code.``
 
 
-Code Blocks wiht Line Numbers
------------------------------
+Formatting Strings
+------------------
 .. code-block:: python
     :linenos:
+    
 
     def addAttr(attrName, niceName):
         """
@@ -23,8 +24,8 @@ Code Blocks wiht Line Numbers
         sys.__stdout__.write( str(attrName) + ' 完成しました!' + '\n')
         print ('\n' + str(attrName) + ' == 含みました!' + '\n')
 
-Code Blocks
------------
+String Methods
+--------------
 .. code-block:: python
 
     def addAttr(attrName, niceName):
@@ -39,13 +40,35 @@ Code Blocks
         print ('\n' + str(attrName) + ' == 含みました!' + '\n')
 
 
-Notes
------
+Escape Sequences
+----------------
 .. note::
     See the docs
 
 
-Warnings
---------
+Special String Operators
+------------------------
 .. warning::
     This is a warning
+
+
+String Format Operators
+------------------------
+.. warning::
+    This is a warning
+
+
+String Methods
+--------------
+
+To create a virtual environment for the project, run the following commands to
+build the virtual environment, install the packages, and read back the virtual
+environment's path:
+
+
+Unicode
+-------
+
+To create a virtual environment for the project, run the following commands to
+build the virtual environment, install the packages, and read back the virtual
+environment's path:
