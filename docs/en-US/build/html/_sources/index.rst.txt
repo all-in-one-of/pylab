@@ -4,32 +4,19 @@
    contain the root `toctree` directive.
 
 Pylab 0.0.1 Documentation
-=================================
+=========================
 
-Another Header
-==============
+This documentation is a primer for all the things I'm learning with regards to python.
 
-Basic introduction text
+- Describes basic data types & structures
+- Example uses of each module
 
-    print 'hello'
-    >> hello
-
-
-Guide
-^^^^^
+.. automodule:: 3. functions.1. functions
+   :members:
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :maxdepth: 1
 
-   license
-   help
-
-
-
-Indices and tables
-^^^^^^^^^^^^^^^^^^
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+    help
+    zen
+    license

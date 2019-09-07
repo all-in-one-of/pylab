@@ -1,12 +1,12 @@
-
-### Group Structure ###
+"""
+[summary]
+"""
 # Creates a foder structure with empty null groups
 
 #Import Maya commands
 import maya.cmds as cmds
 
-def UI ():
-
+def UI (*args):
     #Check to see if window exists
     if cmds.window("Toolbar", exists = True):
         cmds.deleteUI("Toolbar")
@@ -14,14 +14,13 @@ def UI ():
     #Creates UV Tools window
     tool = cmds.window("Toolbar", sizeable = False)
     buttonForm = cmds.formLayout( width=300, height=15, parent = tool)
-    tempName = "tempName"
-    cmds.button( parent = buttonForm, label="FStruct", command="GroupStruct.FStruct('tempParentName')")
-    allowedAreas = ['top', 'bottom']
-    strucToolbar = cmds.toolBar(area='top', content=tool, allowedArea=allowedAreas )
+    cmds.button( parent = buttonForm, label="folderStructure", command="GroupStruct.folderStructure('tempParentName')")
 
-
-def FStruct (*pArgs):
-
+def folderStructure (*args):
+    """
+    docstring here
+        :param *args: 
+    """
     #Create temporary parent group
     nameInput = cmds.textField(query = True, text = True)
     parentName = nameInput
@@ -35,23 +34,23 @@ def FStruct (*pArgs):
         cmds.parent (groupName[index], parentName)
     cmds.select (parentName, replace=True)
 
-def FStrucUI (FStruct):
+def FStrucUI (folderStructure):
+    """
+    docstring here
+        :param folderStructure: 
+    """
     if cmds.window("FolderStructure", exists = True):
         cmds.deleteUI("FolderStructure")
 
-    fStructWindow = cmds.window("FolderStructure", title = "Folder Structure" + " " + "1.0", w = 150, h = 60, mnb = True, mxb = False,  sizeable = False)
-    structLayout = cmds.rowColumnLayout( width=300, height=60, parent = fStructWindow, columnAlign=(1, "center"), numberOfColumns=1)
+    folderStructureWindow = cmds.window("FolderStructure", title = "Folder Structure" + " " + "1.0", w = 150, h = 60, mnb = True, mxb = False,  sizeable = False)
+    structLayout = cmds.rowColumnLayout( width=300, height=60, parent = folderStructureWindow, columnAlign=(1, "center"), numberOfColumns=1)
     cmds.separator( height=10, visible=False )
-    parentField = cmds.textField(width=320, placeholderText="Enter parent group name...", editable = True)
-    cmds.button(width = 320, parent = structLayout, label="Create folder structure", command = FStruct )
+    cmds.button(width = 320, parent = structLayout, label="Create folder structure", command = folderStructure )
     cmds.separator( height=10, visible=False )
     cmds.showWindow()
 
 
 
-# Run this: FStruct (name="PROD_A")
-
-################################################################
 
 
 
@@ -77,8 +76,4 @@ def FStrucUI (FStruct):
 
 
 
-
-
-
-
-# Run this: FStruct (name="PROD_A")
+# Run this: folderStructure (name="PROD_A")
