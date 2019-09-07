@@ -31,9 +31,6 @@ print(type(float(myInt)))
 print(type(str(myFloat)))
 print(type(int(myBool)))
 
-# python is 0 based, meaning that index 0 will be the first item in an argument or array
-
-
 # combining data types
 def add_numbers(a: int, b: int):
     """[summary]
@@ -43,3 +40,13 @@ def add_numbers(a: int, b: int):
         b {int} -- [description]
     """
     print(a + b)
+
+
+# Swapping variables
+x = 10
+y = 11
+
+x, y = y, x
+
+print ('x', x)
+print ('y', y)

@@ -52,3 +52,14 @@ number_grid = [
 for row in number_grid:
     for column in row:
         print(column)
+
+
+# Returns a tuple of the list which consists of the item & the item's index
+letters = ['a', 'b', 'c']
+for letter in enumerate(letters):
+    print (letter)
+
+# Getting a specific item from a tupled list by calling the index value
+letters = ['a', 'b', 'c']
+for index, letter in enumerate(letters):
+    print (index, letter)
