@@ -6,9 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-pylint = "*"
-sphinx = "*"
 numpy = "*"
+pyside2 = "*"
+pyqt5 = "*"
+pylint = "*"
+pygame = "*"
 
 [requires]
-python_version = "2.7"
+python_version = "3.7"
