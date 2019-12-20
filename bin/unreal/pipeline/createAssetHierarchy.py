@@ -1,7 +1,7 @@
 import unreal
 
 project_id = "207"
-project_name = "HeightfieldTest" 
+project_name = "HeightfieldTest"
 
 prefix = ["S", "H1704"]
 sub_directories = ["materials", "textures", "meshes", "blueprints"]
@@ -19,10 +19,10 @@ def asset_hierarchy():
         level.new_level(level_asset)
         print(str(directory_path) + ' already exists')
     else:
-        directory.make_directory(directory_path)        
+        directory.make_directory(directory_path)
         for i in sub_directories:
             directory.make_directory(directory_path + "/" + i)
-        level.new_level(level_asset) 
+        level.new_level(level_asset)
         print(str(directory_path) + ' created')
 
 asset_hierarchy()
