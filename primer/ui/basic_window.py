@@ -1,13 +1,13 @@
-
+from PySide2 import QtGui, QtCore, QtWidgets
 
 """
 [Creating a window using Qt module]
 """
 
-window = Qt.QtWidgets.QMainWindow()
+window = QtWidgets.QMainWindow()
 
 # Menubars
-menubar = Qt.QtWidgets.QMenuBar()
+menubar = QtWidgets.QMenuBar()
 menubar.addAction('File')
 menubar.addAction('Edit')
 menubar.addSeparator
@@ -17,7 +17,7 @@ menubar.addAction('Display')
 window.setMenuBar(menubar)
 
 # Toolbars
-toolbar = Qt.QtWidgets.QToolBar()
+toolbar = QtWidgets.QToolBar()
 toolbar.addAction('File')
 toolbar.addAction('Edit')
 toolbar.addSeparator
@@ -26,7 +26,7 @@ toolbar.addAction('Create')
 toolbar.addAction('Display')
 window.addToolBar(toolbar)
 
-statusBar = Qt.QtWidgets.QStatusBar()
+statusBar = QtWidgets.QStatusBar()
 # Message followed by the duration
 statusBar.showMessage('Loading...', 2000)
 window.setStatusBar(statusBar)

@@ -1,11 +1,12 @@
+from PySide2 import QtGui, QtCore, QtWidgets
+
 
 """
 [Creating a dialog window using Qt module]
 """
 
 
-import Qt
-dialog = Qt.QtWidgets.QDialog()
+dialog = QtWidgets.QDialog()
 dialog.setWindowTitle('SimpleUI')
 # dialog.setWindowFlags(Qt.WindowStaysOnTopHint)
 dialog.setModal(False)
