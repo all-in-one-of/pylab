@@ -1,3 +1,3 @@
-import pymel.core as py
+import pymel.core as pm
 
 pm.sphere()

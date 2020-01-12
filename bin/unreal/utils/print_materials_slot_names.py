@@ -5,7 +5,7 @@ DIR_PATH = '/Game/AutomotiveMaterials/'
 # Get Selected actor
 actors = unreal.EditorLevelLibrary.get_selected_level_actors()
 
-def getMeshes():
+def get_meshes():
     static_meshes = []
     static_mesh_components = []
 
@@ -27,6 +27,7 @@ def getMeshes():
                 static_meshes.append(sm)
             else:
                 print 'nope'
+                pass
     return [static_meshes, static_mesh_components]
 
 
@@ -49,7 +50,7 @@ def getMaterialInstances():
 
 # # Gets the material slot names on the selected actors
 def getMaterialSlotInformation():
-    mesh_component = getMeshes()
+    mesh_component = get_meshes()
     material_dict = {}
     material_information = []
     # Get the material slot name & index of the static mesh component to apply the material to
@@ -84,10 +85,12 @@ def assignMaterial():
         material_index = len[0]
         material_name = len[1]
         if material_name in material_asset_name:
-            static_mesh = getMeshes()
-            print 'found ' + material_name
+            static_mesh = get_meshes()
+            found = 'found ' + str(material_name)
+            print found
         else:
             print 'no matches found'
+            pass
 
 
 assignMaterial()

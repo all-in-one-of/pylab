@@ -8,7 +8,8 @@ import pymel.core as pm
 import os
 import sys
 
-def addAttr(attrName, niceName):
+
+def add_attr(attrName, niceName):
     """
     addAttr [summary]
     
@@ -25,4 +26,4 @@ def addAttr(attrName, niceName):
     print ('\n' + str(attrName) + ' == 含みました!' + '\n')
 
 
-addAttr('TestAttr', 'Test Attr')
+add_attr('TestAttr', 'Test Attr')
