@@ -2,7 +2,7 @@ from PySide2 import QtGui, QtCore, QtWidgets
 from functools import partial
 
 
-class qt_ui(QtWidgets.QDialog):
+class QtUi(QtWidgets.QDialog):
     """
 
     """
@@ -184,5 +184,5 @@ class qt_ui(QtWidgets.QDialog):
         layout_btn_4.clicked.connect(partial(self.stacked_layout.setCurrentIndex, 3))
 
 
-dialog = qt_ui()
+dialog = QtUi()
 dialog.show()
