@@ -33,9 +33,22 @@ class QtUi(QtWidgets.QDialog):
         bold_font.setBold(True)
         example_lb.setFont(bold_font)
 
+        example_le = QtWidgets.QLineEdit()
+        example_le.setPlaceHodlerText('Enter input here...')
 
+        reg_ex = QtCore.QRegExp("[a-zA-Z_]+")
+        text_validator = QtGui.QRegExpValidator(reg_ex, example_le)
+        example_le.setValidaotr(text_validator)
+
+        example_te = QtWidgets.QTextEdit()
+        example_te.setWordWrapMode(QtWidgets.QTextOption.NoWrap)
 
         text_layout.addWidget(example_lb)
+        text_layout.addWidget(example_le)
+        text_layout.addWidget(example_te)
+
+
+
 
 dialog = QtUi()
 dialog.show()
