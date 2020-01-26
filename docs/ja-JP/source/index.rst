@@ -7,6 +7,9 @@
 Hikari Pylab 0.0.1 Docs
 =======================
 
+Guide
+^^^^^
+
 Hikari Pylabは、主にPythonで構築されたゲーム開発パイプラインツールのスイートです。
 これらのツールは、資産の作成と操作における冗長性と繰り返しを削減するために構築されています。
 例とスニペットは別として。 Pylabには、主にPython言語に関する入門書も含まれていますが、
@@ -18,7 +21,9 @@ PyQT、PySide、コアPythonの概念など、他の分野も検討されてい�
 
 .. toctree::
     :maxdepth: 2
-    :caption: 目次:
+    :caption: はじめに
+
+    license
 
 
 
