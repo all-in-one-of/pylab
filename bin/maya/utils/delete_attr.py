@@ -5,7 +5,7 @@ import sys
 import pymel.core as pm
 
 
-def deleteAttr(name = 'enterName'):
+def delete_attr(name='enterName'):
     """
     deleteAttr [summary]
     
@@ -13,8 +13,8 @@ def deleteAttr(name = 'enterName'):
     :type name: str, optional
     """
     sel = pm.selected()
-    attrName = name
+    attr_name = name
     for i in sel:
-        pm.deleteAttr(i, at=attrName)
-    sys.__stdout__.write( str(attrName)+ '完成しました!' + '\n')
-    print ('\n' + str(attrName)+ ' == 削りました!' + '\n')
+        pm.deleteAttr(i, at=attr_name)
+    sys.__stdout__.write(str(attr_name) + '完成しました!' + '\n')
+    print('\n' + str(attr_name) + ' == 削りました!' + '\n')

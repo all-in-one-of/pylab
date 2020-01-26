@@ -36,11 +36,11 @@ def change_teeth(constructor, extrude, teeth=10, length=0.3):
     face_names = []
 
     for face in side_faces:
-        face_name = 'f[%s]' % (face)
+        face_name = 'f[%s]' % face
         face_names.append(face_name)
 
-    print face_names
+    print(face_names)
 
-    pm.setAttr('%s.inputComponents' % (extrude), len(face_names), *face_names, type='componentList')
+    pm.setAttr('%s.inputComponents' % extrude, len(face_names), *face_names, type='componentList')
 
     pm.polyExtrudeFacet(extrude, edit=True, ltz=length)
