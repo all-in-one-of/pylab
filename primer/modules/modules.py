@@ -1,6 +1,10 @@
 #################
 # Modules
 #################
+import sys
 
-import useful_tools
+sys.path.append(r'D:/git-dev/pylab/primer/modules/')
+
+from tools import useful_tools
+
 print(useful_tools.roll_dice(10))
